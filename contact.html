@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional Food</title>
+    <style>
+        body{
+            /* background: #31363F; */
+            font-family: sans-serif;
+            width: 1200px;
+            margin: auto;
+            background-color: #31363F
+        }
+        
+        nav{
+            background-color: #1E3E62;
+            display: inline-block;
+            width: 100%;
+        }
+
+        nav .logo{
+            font-weight: bold;
+            font-size: 24px;
+            margin-left: 100px;
+            font-style: italic;
+            color: bisque;
+
+        }
+
+        nav .logo span{
+            color: orange;
+        }
+
+        nav ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        nav ul li{
+            float: left;
+            background-color: #1E3E62;
+        }
+
+        nav a{
+            display: block;
+            padding: 0 40px;
+            color: bisque;
+            line-height: 40px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        
+        nav ul ul{
+            display: none;
+            position: absolute;
+            margin-top: 65px;
+            top: 60px;
+        }
+
+        nav ul ul li{
+            width: 170px;
+            float: none;
+            display: list-item;
+            position: relative;
+        }
+ 
+        .container-form{
+            height: 300px;
+            background-color: bisque;
+        }
+
+        .container-form table{
+            display: flex;
+            justify-content: center;
+        }
+
+        .container-form table tr td{
+            padding-top: 100px;
+            font-size: 40px;
+        }
+
+        nav a:hover{
+            border-radius: 50px;
+            background-color: orange;
+        }
+
+        nav ul li:hover > ul{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+        <!-- navbar start -->
+        <nav>
+            <div class="logo">
+                <h3>Traditional<span>Food</span>.</h3>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rendang.html">Foods</a>
+                    <ul>
+                        <li><a href="getuk.html">Getuk</a></li>
+                        <li><a href="pepestahu.html">Pepes</a></li>
+                        <li><a href="papeda.html">Papeda</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="container-form">
+            <table>
+                <tr>
+                    <td>Pesan untuk website ini gan😁</td>
+                    <td><a href="https://wa.me/+62089520276895">Tekan Disini!!!</a></td>
+                </tr>
+            </table>
+        </div>
+</body>
+</html>
