@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traditional Food</title>
+    <title>Kerajaan Islam</title>
     <style>
         body{
             /* background: #31363F; */
@@ -17,6 +17,8 @@
             background-color: #1E3E62;
             display: inline-block;
             width: 100%;
+            padding-bottom: 5px;
+            border-bottom: 1px solid bisque;
         }
 
         nav .logo{
@@ -26,6 +28,10 @@
             font-style: italic;
             color: bisque;
 
+        }
+
+        nav .logo h3{
+            text-decoration: underline;
         }
 
         nav .logo span{
@@ -45,7 +51,7 @@
 
         nav a{
             display: block;
-            padding: 0 40px;
+            padding: 0 50px;
             color: bisque;
             line-height: 40px;
             font-size: 20px;
@@ -65,20 +71,62 @@
             display: list-item;
             position: relative;
         }
- 
-        .container-form{
-            height: 300px;
+
+        .form-action{
+            width: 1200px;
+            background-color: #1E3E62;
+            color: bisque;
+            text-align: center;
+        }
+
+        .form-action form{
+            justify-content: center;
+            padding: 160px 30px;
+            margin-left: 100px auto;
+        }
+
+        .form-action h2{
+            font-size: 24px;
+            text-align: center;
+            border-bottom: 1px solid bisque;
+        }
+        
+        .form-action label{
+            display: inline-block;
+            width: 100px;
+            text-align: justify;
+            margin-bottom: 15px;
+            vertical-align: top;
+        }
+
+        .container{
+            justify-content: center;
+            border: 1px solid bisque;
+        }
+
+        input[type="text"],textarea{
+            width: 300px;
+            padding: 5px;
+            margin-bottom: 10px;
             background-color: bisque;
         }
 
-        .container-form table{
-            display: flex;
-            justify-content: center;
+        textarea{
+            height: 60px;
         }
 
-        .container-form table tr td{
-            padding-top: 100px;
-            font-size: 40px;
+        .btn{
+            margin-top: 10px;
+        }
+
+        button{
+            padding: 5px 190px;
+            margin-right: 10px;
+            background-color: bisque ;
+        }
+
+        .btn button:hover{
+            background-color: orange;
         }
 
         nav a:hover{
@@ -96,28 +144,40 @@
         <!-- navbar start -->
         <nav>
             <div class="logo">
-                <h3>Traditional<span>Food</span>.</h3>
+                <h3>Indonesian<span>Sultanate.</span></h3>
             </div>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="rendang.html">Foods</a>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="#AboutUs">Tentang Kami</a></li>
+                <li><a href="index.html">Kesultanan</a>
                     <ul>
-                        <li><a href="getuk.html">Getuk</a></li>
-                        <li><a href="pepestahu.html">Pepes</a></li>
-                        <li><a href="papeda.html">Papeda</a></li>
+                        <li><a href="Demak.html">Demak</a></li>
+                        <li><a href="Cirebon.html">Cirebon</a></li>
+                        <li><a href="Ternate.html">Ternate</a></li>
+                        <li><a href="Banten.html">Banten</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <!-- navbar end -->
 
-        <div class="container-form">
-            <table>
-                <tr>
-                    <td>Pesan untuk website ini gan😁</td>
-                    <td><a href="https://wa.me/+62089520276895">Tekan Disini!!!</a></td>
-                </tr>
-            </table>
-        </div>
+        <!-- form start -->
+         <div class="form-action">
+            <form>
+                <div class="container">
+                    <h2>Kritik dan Saran</h2>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="Nama" required><br>
+                    <label for="address">Domisili</label>
+                    <textarea name="alamat" id="address"></textarea><br>
+                    <div class="btn">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+         </div>
+        <!-- form end -->
+
 </body>
 </html>
